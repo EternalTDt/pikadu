@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pikadu - Новый пост</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/normalize.css">
+</head>
+
+<body>
+  <header class="header">
+    <div class="header__wrapper">
+      <a href="/" class="header__logo"><img src="img/logo.svg" alt="logo: Pikadu" class="header__logo__image"></a>
+      <nav class="header__nav">
+        <ul class="header__menu">
+          <li class="header__menu__item"><a href="#" class="header__menu__link">Свежее</a></li>
+          <li class="header__menu__item"><a href="#" class="header__menu__link">Лучшее</a></li>
+          <li class="header__menu__item"><a href="#" class="header__menu__link">Горячее</a></li>
+          <li class="header__menu__item"><a href="#" class="header__menu__link">Подписки</a></li>
+        </ul>
+      </nav>
+      <!-- /.header__nav -->
+      <div class="input__group search">
+        <input type="search" class="input__search" placeholder="Поиск по сайту">
+        <button class="search__button">
+          <img src="img/vector.svg" alt="icon: search" class="search__icon">
+        </button>
+      </div>
+      <a href="#" class="menu-toggle" id="menu-toggle">
+        <span></span>
+        <span></span>
+        <span></span>
+      </a>
+      <!-- /.input__group -->
+    </div>
+    <!-- /.header__wrapper -->
+  </header>
+  <div class="content">
+    <main class="posts">
+      <form action="#" class="post__add">
+        <input type="text" name="post-title" class="add-title" placeholder="Заголовок поста">
+        <textarea name="post-text" id="text" class="add-text" placeholder="Текст вашего поста"></textarea>
+        <div class="add-buttons">
+          <button type="submit" class="button add-button">
+            <svg class="icon icon-fire">
+              <use xlink:href="img/icons.svg#fire"></use>
+            </svg>
+            Опубликовать пост
+          </button>
+          <button class="button button-outline">
+            <svg class="icon icon-video">
+              <use xlink:href="img/icons.svg#Video"></use>
+            </svg>
+            Видео
+          </button>
+          <button class="button button-outline">
+            <svg class="icon icon-photo">
+              <use xlink:href="img/icons.svg#Photo"></use>
+            </svg>
+            Фото
+          </button>
+        </div>
+      </form>
+    </main>
+    <!-- /.posts -->
+    <aside class="sidebar">
+      <div class="user">
+        <a href="#" class="user__info">
+          <img width="40" height="40" src="img/avatar.jpg" alt="photo: user" class="user__avatar"><span
+            class="username">veronikakats</span>
+        </a>
+        <!-- /.user__info -->
+        <a href="#" class="exit">
+          <svg class="icon icon-exit">
+            <use xlink:href="img/icons.svg#exit"></use>
+          </svg>
+        </a>
+        <!-- /.exit -->
+      </div>
+      <!-- /.user -->
+      <nav class="sidebar__nav">
+        <ul class="sidebar__menu">
+          <li class="sidebar__menu__item">
+            <a href="#" class="sidebar__menu__link">Ответы</a>
+          </li>
+          <li class="sidebar__menu__item">
+            <a href="#" class="sidebar__menu__link">Комментарии</a>
+          </li>
+          <li class="sidebar__menu__item">
+            <a href="#" class="sidebar__menu__link active">Оценки</a>
+          </li>
+          <li class="sidebar__menu__item">
+            <a href="#" class="sidebar__menu__link">Сохраненное</a>
+          </li>
+          <li class="sidebar__menu__item">
+            <a href="#" class="sidebar__menu__link">Подписки</a>
+          </li>
+          <li class="sidebar__menu__item">
+            <a href="#" class="sidebar__menu__link">Заметки</a>
+          </li>
+          <li class="sidebar__menu__item">
+            <a href="#" class="sidebar__menu__link">Игнор-лист</a>
+          </li>
+        </ul>
+      </nav>
+      <a href="#" class="promo"></a>
+    </aside>
+    <!-- /.sidebar -->
+  </div>
+  <script src="js/main.js"></script>
+</body>
+
+</html>
